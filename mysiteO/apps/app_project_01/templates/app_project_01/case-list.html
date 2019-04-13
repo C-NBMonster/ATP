@@ -1,0 +1,207 @@
+﻿{% extends 'indexApp/index.html' %}
+{% load staticfiles %}
+
+{% block rightContents %}
+    <div class="page-content">
+    <div class="x-nav">
+      <span class="layui-breadcrumb">
+        <a href="">首页</a>
+        <a href="">演示</a>
+        <a>
+          <cite>导航元素</cite></a>
+      </span>
+
+    </div>
+    <div class="x-body" >
+      <div class="layui-row">
+        <form class="layui-form layui-col-md12 x-so layui-form-pane" style="margin-bottom: 10px">
+          <input class="layui-input" placeholder="分类名" name="cate_name">
+          <button class="layui-btn" style="margin-left: 10px;margin-top: -3px" lay-submit="" lay-filter="search" ><i class="layui-icon">查询</i></button>
+          <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:-3px" href="javascript:location.replace(location.href);" title="刷新">
+            <i class="layui-icon" style="line-height:30px">ဂ</i></a>
+        </form>
+      </div>
+       <span class="x-right" style="line-height:20px; float:right" id="caseTotel">用例总数：88 条</span>
+      <table class="layui-table layui-form" id="t_case">
+        <thead>
+          <tr>
+            <th width="20">
+              <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+            </th>
+            <th width="20">ID</th>
+            <th>项目</th>
+            <th width="30">排序</th>
+            <th width="60">是否运行</th>
+            <th width="120">操作</th>
+        </thead>
+          <tbody class="x-cate" >
+              <tr cate-id='1' fid='0'>
+                  <td>
+                      <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+                  </td>
+                  <td>1</td>
+                  <td>
+                      <i class="layui-icon x-show" status='true'>&#xe623;</i>
+                      app端用例
+                  </td>
+                  <td><input type="text" class="layui-input x-sort" name="order" value="1"></td>
+                  <td>
+                      <input type="checkbox" name="switch" lay-text="是|否" checked="" lay-skin="switch">
+                  </td>
+                  <td class="td-manage">
+                      <button class="layui-btn layui-btn layui-btn-xs" onclick="x_admin_show('编辑','admin-edit.html')"><i class="layui-icon">&#xe642;</i>编辑</button>
+                      <button class="layui-btn-danger layui-btn layui-btn-xs" onclick="member_del(this,'要删除的id')" href="javascript:;"><i class="layui-icon">&#xe640;</i>删除</button>
+                  </td>
+              </tr>
+
+              <tr cate-id='2' fid='1'>
+                  <td>
+                      <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+                  </td>
+                  <td>2</td>
+                  <td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <i class="layui-icon x-show" status='true'>&#xe623;</i>
+                      登录模块
+                  </td>
+                  <td><input type="text" class="layui-input x-sort" name="order" value="1"></td>
+                  <td>
+                      <input type="checkbox" name="switch" lay-text="是|否" checked="" lay-skin="switch">
+                  </td>
+                  <td class="td-manage">
+                      <button class="layui-btn layui-btn layui-btn-xs" onclick="x_admin_show('编辑','admin-edit.html')"><i class="layui-icon">&#xe642;</i>编辑</button>
+                      <button class="layui-btn-danger layui-btn layui-btn-xs" onclick="member_del(this,'要删除的id')" href="javascript:;"><i class="layui-icon">&#xe640;</i>删除</button>
+                  </td>
+              </tr>
+              <tr cate-id='3' fid='2'>
+                  <td>
+                      <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+                  </td>
+                  <td>3</td>
+                  <td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <i class="layui-icon x-show" status='true'>&#xe623;</i>
+                      ├登录测试用例
+                  </td>
+                  <td><input type="text" class="layui-input x-sort" name="order" value="1"></td>
+                  <td>
+                      <input type="checkbox" name="switch" lay-text="是|否" checked="" lay-skin="switch">
+                  </td>
+                  <td class="td-manage">
+                      <button class="layui-btn layui-btn layui-btn-xs" onclick="x_admin_show('编辑','admin-edit.html')"><i class="layui-icon">&#xe642;</i>编辑</button>
+                      <button class="layui-btn layui-btn layui-btn-xs" onclick="addrow(this, 't_case')"><i class="layui-icon">&#xe6b9;</i>添加</button>
+                      <button class="layui-btn-danger layui-btn layui-btn-xs" onclick="member_del(this,'要删除的id')" href="javascript:;"><i class="layui-icon">&#xe640;</i>删除</button>
+                  </td>
+              </tr>
+              {% for case in case_info %}
+              <tr cate-id='4' fid='3' width="100%" >
+                  <td>
+                      <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+                  </td>
+                  <td></td>
+                  <td colspan="4" style="padding: 0px">
+                      <div class="layui-row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                      <ul style="margin:0px 60px">
+
+                          <li>
+                              <div class="layui-row" style="border-left: 70px solid inset;" >
+                                  <div class="layui-form layui-col-md12 x-so layui-form-pane" >
+
+                                        <i>用例名称:</i>
+                                         <input class="layui-input" style="width:200px;" name="caseName" value={{ case.case_name2 }}>
+                                          <i>账号</i>
+                                          <input class="layui-input" style="width:200px" name="account" value={{ case.para1 }}>
+                                          <i>登录方式</i>
+                                          <input class="layui-input" style="width:200px" name="l_type" value={{ case.para2 }}>
+                                          <i>密码</i>
+                                          <input class="layui-input" style="width:200px" name="pwd" value={{ case.para3 }}>
+                                          <i>验证码</i>
+                                          <input class="layui-input" style="width:100px" name="vcode" value={{ case.para4 }}>
+                                          <input type="checkbox" name="run" lay-text="是|否" checked="" lay-skin="switch">
+                                          <button class="layui-btn layui-btn layui-btn-xs" onclick="x_admin_show('编辑','admin-edit.html')"><i class="layui-icon">&#xe642;</i>编辑</button>
+                                          <button class="layui-btn-danger layui-btn layui-btn-xs" onclick="member_del(this,'要删除的id')" href="javascript:;"><i class="layui-icon">&#xe640;</i>删除</button>
+
+                                  </div>
+                              </div>
+                          </li>
+
+                      </ul>
+                    </td>
+              </tr>
+              {% endfor %}
+
+              <tr cate-id='5' fid='0'>
+                  <td>
+                      <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+                  </td>
+                  <td>5</td>
+                  <td>
+
+                      <i class="layui-icon x-show" status='true'>&#xe623;</i>web端用例
+                  </td>
+                  <td><input type="text" class="layui-input x-sort" name="order" value="1"></td>
+                  <td>
+                      <input type="checkbox" name="switch" lay-text="是|否" checked="" lay-skin="switch">
+                  </td>
+                  <td class="td-manage">
+                      <button class="layui-btn layui-btn layui-btn-xs" onclick="x_admin_show('编辑','admin-edit.html')"><i class="layui-icon">&#xe642;</i>编辑</button>
+                      <button class="layui-btn-danger layui-btn layui-btn-xs" onclick="member_del(this,'要删除的id')" href="javascript:;"><i class="layui-icon">&#xe640;</i>删除</button>
+                  </td>
+              </tr>
+              
+          </tbody>
+      </table>
+    </div>
+    </div>
+    <script>
+      layui.use(['form'], function(){
+        form = layui.form;
+        
+      });
+
+      
+
+      /*用户-删除*/
+      function member_del(obj,id){
+          layer.confirm('确认要删除吗？',function(index){
+              //发异步删除数据
+              $(obj).parents("tr").remove();
+              layer.msg('已删除!',{icon:1,time:1000});
+          });
+      }
+      /*添加行*/
+    function addrow(obj,id){
+          var c=document.getElementById();//获得表格的信息
+          if( c.rows.length==0){//如果是向一个空表增加一行
+         var x=c.insertRow(0);//向空表插入一行
+         var y=x.insertCell(0);//向新行插入一列
+         y.innerHTML="new cell0";
+          }
+        else{
+        var z=c.rows[0].cells;//如果不是空表，首先获得表格有多少列，先获取再插入新行
+        var x=c.insertRow(0);
+        for(var i=0;i<z.length;i++){//依次向新行插入表格列数的单元格
+             var y=x.insertCell(i);
+        y.innerHTML="new cell"+i;
+         }
+}
+
+
+      function delAll (argument) {
+
+        var data = tableCheck.getData();
+  
+        layer.confirm('确认要删除吗？'+data,function(index){
+            //捉到所有被选中的，发异步进行删除
+            layer.msg('删除成功', {icon: 1});
+            $(".layui-form-checked").not('.header').parents('tr').remove();
+        });
+      }
+    </script>
+    <script>var _hmt = _hmt || []; (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script>
+{% endblock rightContents %}

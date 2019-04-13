@@ -1,0 +1,167 @@
+﻿{% extends 'indexApp/index.html' %}
+{% load staticfiles %}
+{#{% block topNav %}{% endblock  %}#}
+{#{% block leftMenu %}{% endblock  %}#}
+{% block rightContents %}
+    <div class="page-content">
+    <div class="x-nav">
+      <span class="layui-breadcrumb">
+        <a href="">首页</a>
+        <a href="">基本配置</a>
+        <a>
+          <cite>服务器信息</cite></a>
+      </span>
+
+    </div>
+
+
+    <div class="x-body">
+        <div class="layui-row">
+            <div style="float:left">
+                <form id="search_form"class="layui-form layui-col-md12 x-so" style="margin-bottom: 10px">
+                    <input type="text" id="platform" name="platform" placeholder="平台" autocomplete="off" class="layui-input">
+                  <input type="text" id="serverIP"name="brand"  placeholder="serverIP" autocomplete="off" class="layui-input">
+                  <input type="text" id="createby" name="createby" placeholder="创建者" autocomplete="off" class="layui-input">
+                  <input type="text" id="status" name="status" placeholder="状态" autocomplete="off" class="layui-input">
+                  <input class="layui-input" placeholder="创建时间" name="start" id="start">
+                  <input class="layui-input" placeholder="创建时间" name="end" id="end">
+                  <button class="layui-btn" style="margin-left: 10px;margin-top: -3px" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+                  <button class="layui-btn" style="margin-top: -3px"lay-submit="" lay-filter="clear" id="clear_search" onclick="reset_searchContents()" href="javascript:;"><i class="layui-icon">重置</i></button>
+
+                    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:-3px" href="javascript:location.replace(location.href);" title="刷新">
+                        <i class="layui-icon" style="line-height:40px">ဂ</i>
+                    </a>
+                  <script type="text/javascript">
+                        function reset_searchContents(clear_search) {
+                            $("#search_form").find(".layui-input").attr("value", null);
+                        }
+                  </script>
+                </form>
+            </div>
+            <div style="float:left">
+                <button class="layui-btn" style="margin-left: 15px" onclick="x_admin_show('添加机型信息','/app_project_base/add_machineInfo',600,400)"><i class="layui-icon"></i>添加</button>
+                <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
+            </div>
+
+      </div>
+      <span class="x-right" style="line-height:20px; float:right">共有数据：88 条</span>
+      <table class="layui-table">
+        <thead>
+          <tr>
+            <th>
+              <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+            </th>
+            <th>ID</th>
+            <th>用户ID</th>
+            <th>系统平台</th>
+            <th>serverIP</th>
+            <th>创建者</th>
+            <th>创建时间</th>
+            <th>状态</th>
+            <th>操作</th></tr>
+        </thead>
+        <tbody>
+        {% for server in server_info %}
+          <tr>
+            <td>
+              <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+            </td>
+            <td>{{ server.id }}</td>
+            <td>{{ server.uid }}</td>
+            <td>{{ server.wind_sys }}</td>
+            <td>{{ server.serverIP }}</td>
+            <td>{{ server.createby }}</td>
+            <td>{{ server.c_time }}</td>
+            <td class="td-status">
+              <span class="layui-btn layui-btn-normal layui-btn-mini" onclick="member_stop(this,'10001')" href="javascript:;">{{ server.status }}</span></td>
+            <td class="td-manage">
+              <a title="编辑"  onclick="x_admin_show('编辑','/app_project_base/edit_serverInfo',600,400)" href="javascript:;">
+                <i class="layui-icon">&#xe642;</i>
+              </a>
+              <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+                <i class="layui-icon">&#xe640;</i>
+              </a>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+{#        分页#}
+{#      <div class="page">#}
+{#        <div>#}
+{#          <a class="prev" href="">&lt;&lt;</a>#}
+{#          <a class="num" href="">1</a>#}
+{#          <span class="current">2</span>#}
+{#          <a class="num" href="">3</a>#}
+{#          <a class="num" href="">489</a>#}
+{#          <a class="next" href="">&gt;&gt;</a>#}
+{#        </div>#}
+{#      </div>#}
+    </div>
+    </div>
+    <script>
+      layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        
+        //执行一个laydate实例
+        laydate.render({
+          elem: '#start' //指定元素
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+          elem: '#end' //指定元素
+        });
+      });
+
+       /*用户-停用*/
+      function member_stop(obj,id){
+          layer.confirm('确认要停用吗？',function(index){
+
+              if($(obj).attr('title')=='启用'){
+
+                //发异步把用户状态进行更改
+                $(obj).attr('title','停用')
+                $(obj).find('i').html('&#xe62f;');
+
+                $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
+                layer.msg('已停用!',{icon: 5,time:1000});
+
+              }else{
+                $(obj).attr('title','启用')
+                $(obj).find('i').html('&#xe601;');
+
+                $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html('已启用');
+                layer.msg('已启用!',{icon: 5,time:1000});
+              }
+              
+          });
+      }
+
+      /*用户-删除*/
+      function member_del(obj,id){
+          layer.confirm('确认要删除吗？',function(index){
+              //发异步删除数据
+              $(obj).parents("tr").remove();
+              layer.msg('已删除!',{icon:1,time:1000});
+          });
+      }
+
+      function delAll (argument) {
+
+        var data = tableCheck.getData();
+  
+        layer.confirm('确认要删除吗？'+data,function(index){
+            //捉到所有被选中的，发异步进行删除
+            layer.msg('删除成功', {icon: 1});
+            $(".layui-form-checked").not('.header').parents('tr').remove();
+        });
+      }
+    </script>
+    <script>var _hmt = _hmt || []; (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script>
+{% endblock rightContents %}
