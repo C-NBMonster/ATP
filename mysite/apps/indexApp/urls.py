@@ -15,6 +15,7 @@ from apps.indexApp import views as indexView
 urlpatterns = [
 
     path(r'index/', indexView.index),
+    path(r'rightContents/', indexView.rightContents),
     path('login/', indexView.login),
     path('logout/', indexView.logout),
 

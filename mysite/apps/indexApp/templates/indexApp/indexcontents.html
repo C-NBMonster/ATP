@@ -1,6 +1,10 @@
 {% extends "indexApp/index.html" %}
 {% load staticfiles %}
-{% block subRightContents %}
+{% block topNav %}{% endblock topNav %}
+{% block leftMenu %}{% endblock leftMenu %}
+{% block bottom %}{% endblock bottom %}
+{#{% block contentNav %}{% endblock contentNav %}#}
+{% block rightContents %}
     <script type="text/javascript">
 		function load(){
 			window.setInterval('showRealTime(clock)',1000);
@@ -165,7 +169,7 @@
         })();
         </script>
     </div>
-{% endblock subRightContents %}
+{% endblock rightContents %}
 
 
 

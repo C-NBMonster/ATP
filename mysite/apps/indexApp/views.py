@@ -10,12 +10,14 @@ from django.views.decorators.csrf import csrf_exempt,requires_csrf_token,csrf_pr
 from common.mysql import conn_mysql
 conn = conn_mysql()
 # Create your views here.
-import  json
+import  json, time
 from _datetime import datetime
 from time import mktime
 
 def index(request):
-    pass
+    return render(request, 'indexApp/index.html')
+
+def rightContents(request):
     return render(request, 'indexApp/indexcontents.html')
 
 @csrf_exempt

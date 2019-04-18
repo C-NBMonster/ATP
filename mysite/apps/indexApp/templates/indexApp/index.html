@@ -206,7 +206,6 @@
                     </li >
                 </ul>
             </li>
-
         </ul>
       </div>
     </div>
@@ -214,16 +213,26 @@
     <!-- <div class="x-slide_left"></div> -->
     <!-- 左侧菜单结束 -->
     <!-- 右侧主体开始 -->
-{% block rightContents %}
-    <div class="page-content">
-            <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
-          <ul class="layui-tab-title">
+    <!-- 面包屑导航-->
+    {% block breadNav %}
+    <div class="layui-tab tab" style="margin-left: 221px;margin-top: 0px;" lay-filter="xbs_tab" lay-allowclose="false" >
+    <div>
+         <ul class="layui-tab-title" id="breadNav" style="margin-left: 3px">
             <li class="home"><i class="layui-icon">&#xe68e;</i>我的桌面</li>
-          </ul>
-          <div class="layui-tab-content">
+         </ul>
+    </div>
+    </div>
+    {% endblock breadNav %}
+{% block rightContents %}
+    <div class="page-content" style="margin-left: 0px; top:46px;">
+            <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
+
+
+
+          <div class="layui-tab-content" style="top:0px;">
             <div class="layui-tab-item layui-show">
                 {% block subRightContents %}
-                <a href="/indexApp/index"></a>
+               <iframe src='/indexApp/rightContents' frameborder="0" scrolling="yes" class="x-iframe"; style="overflow-y: inherit"></iframe>
                 {% endblock subRightContents %}
             </div>
           </div>
