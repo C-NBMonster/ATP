@@ -28,6 +28,6 @@ urlpatterns = [
     url(r'app_project_01/', include('app_project_01.urls')),
     url(r'dataview/', include('dataview.urls')),
     url(r'users/', include('users.urls')),
-    # url(r'testF/', include('testF.urls')),
+    url(r'testF/', include('testF.urls')),
     path('machine_add/', baseView.machine_add),
 ]

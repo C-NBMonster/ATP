@@ -29,7 +29,7 @@
     {% block topNav %}
     <!-- 顶部开始 -->
     <div class="container">
-        <div class="logo"><a href="/index">即有自动化测试平台</a></div>
+        <div class="logo"><a href="/indexApp/index">即有自动化测试平台</a></div>
         <div class="left_open">
             <i title="展开左侧栏" class="iconfont">&#xe699;</i>
         </div>
@@ -215,7 +215,7 @@
     <!-- 右侧主体开始 -->
     <!-- 面包屑导航-->
     {% block breadNav %}
-    <div class="layui-tab tab" style="margin-left: 221px;margin-top: 0px;" lay-filter="xbs_tab" lay-allowclose="false" >
+    <div class="layui-tab tab" style="margin-left: 0px;margin-top: 0px;" lay-filter="xbs_tab" lay-allowclose="false" >
     <div>
          <ul class="layui-tab-title" id="breadNav" style="margin-left: 3px">
             <li class="home"><i class="layui-icon">&#xe68e;</i>我的桌面</li>
@@ -223,12 +223,9 @@
     </div>
     </div>
     {% endblock breadNav %}
-{% block rightContents %}
+    {% block rightContents %}
     <div class="page-content" style="margin-left: 0px; top:46px;">
             <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
-
-
-
           <div class="layui-tab-content" style="top:0px;">
             <div class="layui-tab-item layui-show">
                 {% block subRightContents %}
@@ -236,7 +233,6 @@
                 {% endblock subRightContents %}
             </div>
           </div>
-
         </div>
         </div>
 
