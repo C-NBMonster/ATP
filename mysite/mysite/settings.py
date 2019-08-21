@@ -10,8 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
-import os
-import sys
+import os, sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,13 +18,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #app不在根目录下时需要添加其路径到sys.path
 sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 sys.path.insert(0, os.path.join(BASE_DIR, "extra_apps"))
-# sys.path.insert(0, os.path.join(BASE_DIR, "testF"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%$b)k(7+rb@_d$2u+-l$2%xtblnv@!)+uux1!de=c+(z2!8&*s'
+SECRET_KEY = '6j!*r@^y8wd!odsrc-9@lo@b^=axn1hadf-esya))ob@j@9$^+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,12 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.base',
     'apps.users',
-    'apps.app_project_base',
-    'apps.app_project_01',
-    'apps.indexApp',
+    'apps.index',
     'apps.dataview',
-    'testF',
+    'apps.project_01',
 ]
 
 MIDDLEWARE = [
@@ -65,12 +62,8 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'apps/indexApp/templates'),
-                 os.path.join(BASE_DIR, 'apps/app_project_01/templates'),
-                 os.path.join(BASE_DIR, 'apps/users/templates'),
-                 os.path.join(BASE_DIR, 'apps/dataview/templates'),
-                 os.path.join(BASE_DIR, 'testF/templates'),
-         ],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -95,6 +88,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -103,8 +97,12 @@ DATABASES = {
         'PASSWORD': 'cjx123456',
         'HOST': 'localhost',
         'PORT': '3306',
+        'ATOMIC_REQUESTS': True,
     }
 }
+
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -136,7 +134,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = False   #保证datetime.now使用的是time_zone的时间
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)

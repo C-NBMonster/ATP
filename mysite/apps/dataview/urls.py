@@ -5,15 +5,14 @@
 @contact: chenjingxu3@dafycredit.com
 @software: JY_Android_AT
 @file: urls.py
-@time: 2019/3/21 11:02
+@time: 2019/5/13 10:46
 @desc: 
 """
-from django.conf.urls import include, url
 from django.urls import path
-from apps.dataview import views as dataView
+from apps.dataview import views as dView
+
 urlpatterns = [
 
-    # 测试数据视图汇总
-    path('show_dataview/', dataView.show_dataview),
+    path(r'load_dataview/', dView.load_dataview),
 
 ]

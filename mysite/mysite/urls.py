@@ -16,18 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
-from testF import views as Tview
-from apps.app_project_base import views as baseView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('testAdd/', Tview.testAdd),
-    path('machine_add/', baseView.machine_add),
-    path('machine_edit/', baseView.machine_edit),
-    url(r'indexApp/', include('indexApp.urls')),
-    url(r'app_project_base/', include('app_project_base.urls')),
-    url(r'app_project_01/', include('app_project_01.urls')),
-    url(r'dataview/', include('dataview.urls')),
-    url(r'users/', include('users.urls')),
-    url(r'testF/', include('testF.urls')),
-    path('machine_add/', baseView.machine_add),
+    url(r'index/', include('apps.index.urls')),
+    url(r'base/', include('apps.base.urls')),
+    url(r'users/', include('apps.users.urls')),
+    url(r'dataview/', include('apps.dataview.urls')),
+    url(r'project_01/', include('apps.project_01.urls')),
 ]

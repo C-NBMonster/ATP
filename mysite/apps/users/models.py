@@ -1,9 +1,9 @@
 from django.db import models
 from django.contrib import admin
 # Create your models here.
+from django.contrib.auth.models import AbstractUser
 
-
-class User(models.Model):
+class UserInfo(models.Model):
 
     gender = (
         ('male', "男"),

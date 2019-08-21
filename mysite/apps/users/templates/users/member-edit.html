@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="UTF-8">
-    <title>欢迎页面-X-admin2.0</title>
+    <title>会员编辑</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
@@ -22,14 +22,14 @@
   
   <body>
     <div class="x-body">
-        <form class="layui-form">
+        <form class="layui-form" method="get" action="/apps/users/member_edit_save">
           <div class="layui-form-item">
               <label for="L_email" class="layui-form-label">
                   <span class="x-red">*</span>邮箱
               </label>
               <div class="layui-input-inline">
                   <input type="text" id="L_email" name="email" required="" lay-verify="email"
-                  autocomplete="off" class="layui-input">
+                  autocomplete="off" class="layui-input" value="{{ edit_info.email }}">
               </div>
               <div class="layui-form-mid layui-word-aux">
                   <span class="x-red">*</span>将会成为您唯一的登入名
@@ -37,11 +37,11 @@
           </div>
           <div class="layui-form-item">
               <label for="L_username" class="layui-form-label">
-                  <span class="x-red">*</span>昵称
+                  <span class="x-red">*</span>用户名
               </label>
               <div class="layui-input-inline">
                   <input type="text" id="L_username" name="username" required="" lay-verify="nikename"
-                  autocomplete="off" class="layui-input">
+                  autocomplete="off" class="layui-input" value="{{ edit_info.username }}">
               </div>
           </div>
           <div class="layui-form-item">
@@ -50,7 +50,7 @@
               </label>
               <div class="layui-input-inline">
                   <input type="password" id="L_pass" name="pass" required="" lay-verify="pass"
-                  autocomplete="off" class="layui-input">
+                  autocomplete="off" class="layui-input" value="{{ edit_info.password }}">
               </div>
               <div class="layui-form-mid layui-word-aux">
                   6到16个字符
@@ -63,6 +63,15 @@
               <div class="layui-input-inline">
                   <input type="password" id="L_repass" name="repass" required="" lay-verify="repass"
                   autocomplete="off" class="layui-input">
+              </div>
+          </div>
+          <div class="layui-form-item">
+              <label for="enable" class="layui-form-label">
+                  <span class="x-red">*</span>是否激活
+              </label>
+              <div class="layui-input-inline">
+                  <input type="text" id="enable" name="enable" required=""
+                  autocomplete="off" class="layui-input" value="{{ edit_info.is_active }}">
               </div>
           </div>
           <div class="layui-form-item">

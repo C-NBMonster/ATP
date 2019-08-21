@@ -1,19 +1,10 @@
-﻿{% extends 'indexApp/index.html' %}
+﻿{% extends 'index/index.html' %}
 {% load staticfiles %}
 {% block css %}
 <link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 {% endblock css %}
-{% block subRightContents %}
-    <div class="x-nav">
-      <span class="layui-breadcrumb">
-        <a href="">首页</a>
-        <a href="">演示</a>
-        <a>
-          <cite>导航元素</cite></a>
-      </span>
-
-    </div>
-    <div class="x-body">
+{% block rightContents %}
+    <div class="x-body" style="margin-left: 221px;padding-top: 0">
       <div class="layui-row">
           <div style="float:left">
               <form class="layui-form layui-col-md12 x-so" style="margin-bottom: 10px">
@@ -39,7 +30,7 @@
             <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
           </div>
       </div>
-      <span class="x-right" style="line-height:20px; float:right">共有数据：88 条</span>
+      <span class="x-right" style="line-height:20px; float:right">共有数据：{{ uTotal }} 条</span>
       <table class="layui-table">
         <thead>
           <tr>
@@ -48,37 +39,46 @@
             </th>
             <th>ID</th>
             <th>用户名</th>
-            <th>性别</th>
-            <th>手机</th>
-            <th>邮箱</th>
-            <th>部门</th>
+            <th>密码</th>
+            <th>email</th>
+            <th>是否激活</th>
+            <th>超级用户</th>
             <th>加入时间</th>
-            <th>状态</th>
+            <th>最后登录</th>
             <th>操作</th></tr>
         </thead>
+        {% if uTotal == 0 %}
         <tbody>
-        {% for member in memberInfo %}
-          <tr>
+          <tr >
+            <td colspan="11" style="border-width: 0px; top:100px" >
+                <h2 style="text-align: center; ">{{ msg }}</h2>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        {% else %}
+        <tbody>
+        {% for member in user_info %}
+          <tr id="{{ member.id }}">
             <td>
               <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
             </td>
             <td>{{ member.id}}</td>
-            <td>{{ member.name }}</td>
-            <td>{{ member.sex }}</td>
-            <td>{{ member.phone }}</td>
+            <td>{{ member.username }}</td>
+            <td>{{ member.password }}</td>
             <td>{{ member.email }}</td>
-            <td>{{ member.depart }}</td>
-            <td>{{ member.joinTime }}</td>
-            <td class="td-status">
-              <span class="layui-btn layui-btn-normal layui-btn-mini">{{ member.status }}</span></td>
+            <td>{{ member.is_active }}</td>
+            <td>{{ member.is_superuser }}</td>
+            <td>{{ member.date_joined }}</td>
+            <td>{{ member.last_login }}</td>
             <td class="td-manage">
               <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
                 <i class="layui-icon">&#xe601;</i>
               </a>
-              <a title="编辑"  onclick="x_admin_show('编辑','/member_edit',600,400)" href="javascript:;">
+              <a title="编辑"  onclick="x_admin_show('编辑','/users/member_edit_get?id={{ member.id}}',600,400)" href="javascript:;">
                 <i class="layui-icon">&#xe642;</i>
               </a>
-              <a onclick="x_admin_show('修改密码','/member_password',600,400)" title="修改密码" href="javascript:;">
+              <a onclick="x_admin_show('修改密码','/users/member_password',600,400)" title="修改密码" href="javascript:;">
                 <i class="layui-icon">&#xe631;</i>
               </a>
               <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
@@ -100,6 +100,7 @@
           <a class="next" href="">&gt;&gt;</a>
         </div>
       </div>
+    {% endif %}
     </div>
     </div>
     <script>
@@ -169,4 +170,4 @@
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();</script>
-{% endblock subRightContents %}
+{% endblock rightContents %}

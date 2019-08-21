@@ -16,6 +16,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/mysite/apps" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mysite/common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mysite/apps/testF" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mysite/apps/app_project_base" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
