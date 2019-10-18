@@ -1,0 +1,222 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>通用自动化测试平台</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="icon" href="./../../../../static/images/labelico.png"/>
+    <link rel="stylesheet" href="./../../../../static/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./../../../../static/css/font.css">
+	<link rel="stylesheet" href="./../../../../static/css/xadmin.css">
+
+    <script type="text/javascript" src="../../../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="./../../../../static/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./../../../../static/js/xadmin.js"></script>
+
+</head>
+<body>
+    <div>
+        <!-- 顶部开始 -->
+        <div class="container" style="width:100%">
+            <div class="logo">
+                <a href="/">即有自动化测试平台</a>
+                <div class="left_open">
+                    <i title="展开左侧栏" class="iconfont">&#xe699;</i>
+                </div>
+            </div>
+            <ul class="layui-nav right" lay-filter="">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">{{ user }}</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+        {#              <dd><a onclick="x_admin_show('个人信息','http://www.baidu.com')">个人信息</a></dd>#}
+        {#              <dd><a onclick="x_admin_show('登录', '/index/logout',500,600)">切换帐号</a></dd>#}
+                        <dd><a href="/index/logout">退出</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!-- 顶部结束-->
+        <!-- 左侧菜单开始-->
+        <div class="left-nav">  <!--此class控制整个left菜单样式-->
+            <div id="side-nav">
+                <ul id="nav">
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe6ae;</i>
+                            <cite>基本配置</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+        {#                        <a _href="/base/load_machineInfo_list">#}
+                                <a href="/base/load_machineInfo" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>手机信息</cite>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/base/load_appInfo" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>APP信息</cite>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/base/load_serverInfo" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>服务器信息</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-name="component" class="layui-nav-item">
+                        <a href="javascript:;" lay-direction="2">
+                            <i class="iconfont">&#xe6f4;</i>
+                            <cite>测试项目</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
+                            <span class="layui-nav-more"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="layui-nav-item">
+                                <a onclick="javascript:;">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>即有生活</cite>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/project_01/load_cases" target="mainBody">
+                                            <cite>用例管理</cite>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/project_01/load_appRunSet" target="mainBody">
+                                            <cite>APP功能测试</cite>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/project_01/load_webFuncSet" target="mainBody">
+                                            <cite>WEB功能测试</cite>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/project_01/load_interface" target="mainBody">
+                                            <cite>接口测试</cite>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/project_01/load_report" target="mainBody">
+                                            <cite>测试报告</cite>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <li>
+                        <a href="javascript:;" >
+                            <i class="iconfont">&#xe757;</i>
+                            <cite>数据统计</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/dataview/load_dataview" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>测试统计</cite>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe6b8;</i>
+                            <cite>用户管理</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/users/load_member" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>用户列表</cite>
+                                </a>
+                            </li>
+{#                            <li>#}
+{#                                <a href="/users/member_del" target="mainBody">#}
+{#                                    <i class="iconfont">&#xe6a7;</i>#}
+{#                                    <cite>用户删除</cite>#}
+{#                                </a>#}
+{#                            </li>#}
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe726;</i>
+                            <cite>管理员管理</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="/users/show_admin_list" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>管理员列表</cite>
+                                </a>
+                            </li >
+                            <li>
+                                <a href="/users/show_admin_role_list" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>角色管理</cite>
+                                </a>
+                            </li >
+                            <li>
+                                <a href="/users/show_admin_cate_list" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>权限分类</cite>
+                                </a>
+                            </li >
+                            <li>
+                                <a href="/users/show_admin_rule_list" target="mainBody">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>权限管理</cite>
+                                </a>
+                            </li >
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 左侧菜单结束-->
+        <!--面包屑导航开始-->
+        <div class="layui-tab tab" style="margin-left: 0px;margin-top: 0px;" lay-filter="xbs_tab" lay-allowclose="false" >
+            <div>
+                 <ul class="layui-tab-title" id="breadNav" style="margin-left: 3px">
+                     <li class="home"><i class="layui-icon">&#xe68e;</i>我的桌面</li>
+                 </ul>
+            </div>
+        </div>
+        <!--面包屑导航结束-->
+        <!-- 右侧内容显示开始-->
+        <div class="page-content" style="margin-left: 0px; top:46px; left: 221px">
+            <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
+                <div class="layui-tab-content" style="top:0px;">
+                    <div class="layui-tab-item layui-show">
+                       <iframe src='/rightContents' frameborder="0" scrolling="no" class="x-iframe"; style="overflow-y: inherit" name="mainBody"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content-bg"></div>
+        <!-- 右侧内容显示结束-->
+        <!-- 底部开始-->
+{#        <div class="footer">This's footer</div>#}
+        <!-- 底部结束-->
+    </div>
+</body>
+</html>

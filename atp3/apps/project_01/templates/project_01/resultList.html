@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/chosen/1.8.2/chosen.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../../../../static/css/report.css">
+    <base target="_blank">
+</head>
+<body>
+<div class="page-content">
+{#<div class="row  border-bottom white-bg dashboard-header">#}
+{#    <div class="col-sm-12 text-center">#}
+{#        <span style="color: #1ab394; font-size: 20px; font-weight: 700">测试报告</span>#}
+{#    </div>#}
+{#</div>#}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>报告汇总</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-sm-6 b-r" style="height:350px">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label text-navy">用例名称:</label>
+                                    <div class="col-sm-5">
+                                        <span class="form-control" id="testName"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label text-navy">用例总数:</label>
+                                    <div class="col-sm-5">
+                                        <span class="form-control" id="testAll"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label text-navy">用例通过:</label>
+                                    <div class="col-sm-5">
+                                        <span class="form-control" id="testPass"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label text-danger">用例失败:</label>
+                                    <div class="col-sm-5">
+                                        <span class="form-control text-danger" id="testFail"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label text-warning">用例跳过:</label>
+                                    <div class="col-sm-5">
+                                        <span class="form-control text-warning" id="testSkip"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label text-navy">开始时间:</label>
+                                    <div class="col-sm-5">
+                                        <span class="form-control" id="beginTime"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label text-navy">运行时间:</label>
+                                    <div class="col-sm-5">
+                                        <span class="form-control" id="totalTime"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6">
+                            <div style="height:350px" id="echarts-map-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>详细数据</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="input-group panel-heading" style="width: 100%; background-color: #1ab394; margin-bottom: 10px; text-align: left; font-family: Consolas;">
+                        <label style="color: snow">测试类:</label>
+                        <select class="chosen-select form-control" data-placeholder="----------" style="width: 300px;" name="filterClass" id="filterClass">
+                            <option value="">----------</option>
+                        </select>
+                        <label style="color: snow">结果:</label>
+                        <select class="chosen-select form-control" data-placeholder="----------" style="width: 300px;" name="filterResult" id="filterResult">
+                            <option value="">----------</option>
+                        </select>
+                        <div style="float: right">
+                            <label class="form-control">
+                                <span class="text-navy">用例数: </span><span class="text-navy b-r" id="filterAll">3</span><span> | </span>
+                                <span style="color: green">成功: </span><span style="color: green" id="filterOk">3</span><span> | </span>
+                                <span class="text-danger">失败: </span><span class="text-danger" id="filterFail">3</span><span> | </span>
+                                <span class="text-warning">跳过: </span><span class="text-warning" id="filterSkip">3</span>
+                            </label>
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>测试类</th>
+                            <th>测试方法</th>
+                            <th>用例描述</th>
+                            <th>运行时长</th>
+                            <th>结果</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody id="detailBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/content.min.js?v=1.0.0"></script>
+<script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.min.js"></script>
+<script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
+<script src="./../../../../static/js/report.js"></script>
+</body>
+</html>

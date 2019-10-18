@@ -368,9 +368,10 @@ xblock{
 }
 .page-content{
     position: absolute;
-    top: 40px;
+    top: 75px;
     right: 0;
     bottom: 0px;
+    left: 221px;
     overflow: hidden;
     z-index: 1;
 }

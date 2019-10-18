@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dce30ed4-7674-4707-bf5b-5ccf96ec808e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/atp3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/appinfoAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/appinfoEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/appinfoList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/machineAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/machineEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/machineList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/serverInfoAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/serverInfoEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/templates/base/serverInfoList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/base/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/templates/dataview/dataview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/dataview/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/templates/index/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/templates/index/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/index/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/API.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/API_Para.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/Interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/InterfaceClass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/add.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/excel_pub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/mysql_pub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/mysql_pubtwo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/oracle_pub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/u2Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/u2Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/url.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/userInfo - 副本.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/case/userInfo.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/appRunetAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/appRunetEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/appRunsetList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/caseAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/caseEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/caseList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/infterfaceEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/interfaceAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/interfaceList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/ra-history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/resultList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/ri-history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/rw-history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/webRunsetAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/webRunsetEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/webRunsetList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/project_01/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminCate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminRole.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminRule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminRuleAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/adminRuleEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/memberAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/memberEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/memberList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/memberPassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/roleAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/templates/users/roleEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp3/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp3/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atp3/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/mysql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/oracle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/xadmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/aiwrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/labelico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/caseJS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/xadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/xcity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/bootstrap-3.3.7/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/文档与示例/GitHub.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/文档与示例/Git码云.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/文档与示例/在线示例.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/文档与示例/快速上手.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lib/layui/更新日志.url" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysite/static/css/xadmin.css" beforeDir="false" afterPath="$PROJECT_DIR$/../mysite/static/css/xadmin.css" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1SEEmcUfWkNHKEg6JEYtinIv28u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/users/templates/users" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps\users\templates\users" />
+      <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps\project_01\templates\project_01" />
+      <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps\base\templates\base" />
+      <recent name="D:\Py_Projects\django_projects\ATP\atp3\project_01\templates\project_01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="atp3" type="Python.DjangoServer" factoryName="Django server">
+      <module name="atp3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="atp3.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dce30ed4-7674-4707-bf5b-5ccf96ec808e" name="Default Changelist" comment="" />
+      <created>1571120514218</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571120514218</updated>
+      <workItem from="1571120521281" duration="3257000" />
+      <workItem from="1571125250094" duration="23441000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
