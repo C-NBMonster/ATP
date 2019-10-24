@@ -20,4 +20,10 @@ urlpatterns = [
     path(r'member_edit_get/', uView.member_edit_get),
     path(r'member_edit_save/', uView.member_edit_save),
     path(r'member_add/', uView.member_add),
+
+    path(r'loadAdmin/', uView.loadAdmin),
+    path(r'loadRole/', uView.loadRole),
+    path(r'loadRule/', uView.loadRule),
+    path(r'loadAdminGroup/', uView.loadAdminGroup),
+
 ]

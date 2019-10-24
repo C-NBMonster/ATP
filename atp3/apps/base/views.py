@@ -65,11 +65,11 @@ def machine_add(request, userId=538530):
     m.update()
     #return render(request, 'base/machine-list.html', {"msg": "添加机器成功！"})
     #return HttpResponseRedirect('/base/load_machineInfo_list')
-    return redirect('/base/load_machInfo_list')
+    return redirect('/base/load_machineInfo')
 
 def machine_delete(request):
     models.machineinfo.objects.get(id=request.GET["id"]).delete()
-    return redirect('/base/load_machInfo_list')
+    return redirect('/base/load_machineInfo')
 
 
 def load_appInfo(request, userid=538530):
@@ -116,7 +116,7 @@ def edit_appInfo_save(request):
 
 def app_delete(request):
     models.appinfo.objects.get(id=request.GET["id"]).delete()
-    return redirect('/base/load_appInfo_list')
+    return redirect('/base/load_appInfo')
 
 
 def load_serverInfo(request, userid=538530):
@@ -147,7 +147,7 @@ def add_serverInfo(request, userid=538530):
 def edit_serverInfo_get(request):
     # 获取当前行的信息，并传到machine_edit.html
     server_edit_info = models.serverinfo.objects.get(id=request.GET["id"])
-    return render(request, 'base/serverInfo-edit.html', locals())
+    return render(request, 'base/serverInfoList.html', locals())
 
 
 def edit_serverInfo_save(request):
@@ -156,11 +156,11 @@ def edit_serverInfo_save(request):
         serverIP = request.GET["serverIP"],
         status   = request.GET["enable"],
     )
-    return redirect('/base/load_serverInfo_list')
+    return redirect('/base/load_serverInfo')
 
 
 def server_delete(request):
     models.serverinfo.objects.get(id=request.GET["id"]).delete()
-    return redirect('/base/load_serverInfo_list')
+    return redirect('/base/load_serverInfo')
 
 
