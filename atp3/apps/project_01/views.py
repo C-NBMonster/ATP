@@ -91,10 +91,13 @@ def appRunSetAdd(request, userid=538530):
     m.update()
     return redirect("/project_01/load_appRunSet")
 
+
 def appRunSetEdit_get(request, userid=538530):
     # 获取当前行的信息，并传到app-runset-edit.html
     edit_info = cases.objects.get(id=request.GET["id"])
     return render(request, 'project_01/appRunetEdit.html', locals())
+
+
 
 def appRunSetEdit_save(request, userid=538530):
     m = cases.objects
@@ -123,8 +126,16 @@ def runWeb_history(request):
 
 
 #接口测试
-def load_interface(request):
-    return render(request, 'project_01/interfaceList.html')
+def load_interface(request, userId=538530):
+    iTotle = models.interface.objects.filter(uid=userId).count()
+    if iTotle == 0 :
+        msg = "没有接口测试用例"
+    else:
+        case_info = models.interface.objects.filter(uid=userId).order_by("-createTime")
+        l_case = []
+        for case in case_info:
+            l_case.append(case)
+    return render(request, 'project_01/interfaceList.html', locals())
 
 
 def interfaceAdd(request):

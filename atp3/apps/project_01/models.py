@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 from django.db import models
-
+from django.utils import timezone
 class cases(models.Model):
     #用例库
     uid      = models.IntegerField(default=None, blank=True) #用户id
@@ -104,18 +104,27 @@ class runHistory(models.Model):
         verbose_name_plural = "运行历史"
 
 class interface(models.Model):
-    #APP运行配置
+    #运行配置
     request_type=(
         ('get', 'get'),
         ('post', 'post'),
         )
     uid    = models.IntegerField(blank=True, default=None)
-    c_name = models.CharField(max_length=100, blank=True)
-    r_type = models.CharField(max_length=10, choices=request_type, default='get', blank=True)
+    project = models.CharField(max_length=50, blank=True)
+    caseName = models.CharField(max_length=100, blank=True)
+    url = models.CharField(max_length=150, blank=True)
+    reqType   = models.CharField(max_length=10, choices=request_type, default='get', blank=True)
+    parameter = models.CharField(max_length=300, blank=True)
+    checkPoint= models.CharField(max_length=200, blank=True)
     result = models.CharField(max_length=10, blank=True)
+    tester = models.CharField(max_length=10, blank=True)
+    createTime = models.DateTimeField(blank=True, default=timezone.now)
+    updateTime = models.DateTimeField(blank=True, default=timezone.now)  #auto_add_now简直见鬼，必须用timezone.now或者datetime
+    isRun = models.CharField(max_length=10, blank=True)
+    operation = models.CharField(max_length=10, blank=True)
 
     def __str__(self):
-        return self.c_name
+        return self.caseName
 
     class Meta:
         # ordering = ["-c_time"]
