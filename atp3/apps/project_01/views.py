@@ -6,12 +6,60 @@ from django.shortcuts import render
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from . import models
-from apps.project_01.models import cases
+from apps.project_01.models import cases, Appcase
 from apps.project_01.case import u2Main
 import unittest
 # Create your views here.
 #用例管理
 
+def loadFuncCases(request, userid=538530):
+    #加载功能测试用例
+    cTotal = Appcase.objects.filter(uid=userid).count()
+    case_info = Appcase.objects.filter(uid=userid).order_by("-id")
+    l_case = []
+    for case in case_info:
+        l_case.append(case)
+    return render(request, 'project_01/funcCasesList.html', locals())
+
+def popAddCases(request):
+    #新增用例
+    return render(request, 'project_01/funcCasesAdd.html')
+
+
+def AddFuncCases(request, userid=538530):
+    #新增功能测试用例
+    m = Appcase.objects
+    m.create(uid=userid,
+             pro_name=request.GET["proName"],
+             pho_name=request.GET["phoneName"],
+             serverIP=request.GET["serverIP"],
+             createby="mirror",
+             ).save()
+    m.update()
+    return redirect('/project_01/loadFuncCases')
+
+
+def EditFuncCases_get(request, userid=538530):
+    #编辑功能测试用例
+    editInfo = Appcase.objects.GET(id=request.get("id"))
+    return render(request, 'project_01/funcCasesEdit.html', locals())
+
+def EditFuncCases_save(request, userid=538530):
+    #编辑功能测试用例
+    m = Appcase.objects
+    # m.create(uid=userid,
+    #          pro_name=request.GET["proName"],
+    #          pho_name=request.GET["phoneName"],
+    #          serverIP=request.GET["serverIP"],
+    #          createby="mirror",
+    #          ).save()
+    m.update()
+    return redirect('/project_01/loadFuncCases')
+
+def deleteCases(request):
+    #删除用例
+    Appcase.objects.get(id=request.GET["id"]).delete()
+    return redirect("/project_01/loadFuncCases")
 
 def load_cases(request, userid=538530):
     case_info = cases.objects.filter(uid=userid).order_by("-id")

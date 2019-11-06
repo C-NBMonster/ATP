@@ -15,6 +15,12 @@ from apps.project_01 import views as p1View
 urlpatterns = [
 
     # 用例管理
+    path('loadFuncCases/', p1View.loadFuncCases),
+    path('popAddCases/', p1View.popAddCases),
+    path('AddFuncCases/', p1View.AddFuncCases),
+    path('EditFuncCases_get/', p1View.EditFuncCases_get),
+    path('EditFuncCases_save/', p1View.EditFuncCases_save),
+    path('deleteCases/', p1View.deleteCases),
     path('load_cases/', p1View.load_cases),
     path('caseEdit_get/', p1View.caseEdit_get),
     path('caseEdit_save/', p1View.caseEdit_save),

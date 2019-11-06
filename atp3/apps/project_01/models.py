@@ -186,17 +186,24 @@ class case_login(models.Model):
 
 class Appcase(models.Model):
     #Product = models.ForeignKey('product.Product', on_delete=models.CASCADE, null=True)  # 关联产品id
-    appcasename = models.CharField('用例名称', max_length=200)  # 测试用例名称
-    apptestresult = models.BooleanField('测试结果')  # 测试结果
-    apptester = models.CharField('测试负责人', max_length=16)  # 执行人
-    create_time = models.DateTimeField('创建时间', auto_now=True)  # 创建时间-自动获取当前时间
+    uid = models.DecimalField('用户id', max_length=10, max_digits=10, decimal_places=0, default="538530")  # 用户id
+    product = models.CharField('项目名称', max_length=100, blank=True)  # 测试用例名称
+    caseName = models.CharField('用例名称', max_length=200, blank=True)  # 测试用例名称
+    testResult = models.CharField('测试结果', max_length=10, blank=True)  # 测试结果
+    tester = models.CharField('测试负责人', max_length=16, blank=True)  # 执行人
+    createTime = models.DateTimeField('创建时间', auto_now=True)  # 创建时间-自动获取当前时间
+    updateTime = models.DateTimeField('更新时间', auto_now=True)  # 创建时间-自动获取当前时间
+    runTime = models.DateTimeField('最近运行时间', auto_now=True)  # 创建时间-自动获取当前时间
+    runSort = models.DecimalField('运行顺序', max_length=10, max_digits=10, decimal_places=0, default="0")  #运行顺序
+    isRun   = models.CharField('是否运行', max_length=10, default="是")  # 是否运行
+    operation = models.CharField('操作', max_length=50, default="编辑")  # 操作
 
     class Meta:
         verbose_name = 'app测试用例'
         verbose_name_plural = 'app测试用例'
 
     def __str__(self):
-        return self.appcasename
+        return self.caseName
 
 
 class Appcasestep(models.Model):
