@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'apps.index',
     'apps.dataview',
     'apps.project_01',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [

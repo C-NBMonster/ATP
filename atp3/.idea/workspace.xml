@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dce30ed4-7674-4707-bf5b-5ccf96ec808e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/index/templates/index/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/templates/index/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/project_01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project_01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/project_01/templates/project_01/caseList.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project_01/templates/project_01/caseList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/project_01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project_01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/project_01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project_01/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atp3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/atp3/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +101,8 @@
       <workItem from="1572227355506" duration="3018000" />
       <workItem from="1572245374735" duration="7258000" />
       <workItem from="1572941419934" duration="18745000" />
-      <workItem from="1573035507163" duration="477000" />
+      <workItem from="1573035507163" duration="3430000" />
+      <workItem from="1573442900584" duration="8780000" />
     </task>
     <task id="LOCAL-00001" summary="完成80%页面结构重改">
       <created>1571399004406</created>
@@ -135,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572949824152</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增用例前端页面，列表">
+      <created>1573036212533</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573036212533</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +163,19 @@
     <MESSAGE value="完成页面重构后的函数修改" />
     <MESSAGE value="完成interface列表" />
     <MESSAGE value="新增用例数据库表（列表+新增表）" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增用例数据库表（列表+新增表）" />
+    <MESSAGE value="新增用例前端页面，列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增用例前端页面，列表" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/apps/project_01/templates/project_01/funcCasesAdd.html</url>
+          <line>178</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
