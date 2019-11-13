@@ -56,13 +56,6 @@ def logout(request):
     return redirect('/index/login')
 
 
-def letf(request):
-    return render(request, 'index/left.html')
-
-
-def top(request):
-    return render(request, 'index/top.html')
-
 def welcome(request):
     return render(request, 'index/welcome.html')
 

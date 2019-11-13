@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dce30ed4-7674-4707-bf5b-5ccf96ec808e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/index/templates/index/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/atp3/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/project_01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/project_01/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,14 +43,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps\project_01\templates\project_01" />
+      <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps\index\templates\index" />
       <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps\users\templates\users" />
       <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps\base\templates\base" />
       <recent name="D:\Py_Projects\django_projects\ATP\atp3\project_01\templates\project_01" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Py_Projects\django_projects\ATP\atp3\apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -102,7 +109,7 @@
       <workItem from="1572245374735" duration="7258000" />
       <workItem from="1572941419934" duration="18745000" />
       <workItem from="1573035507163" duration="3430000" />
-      <workItem from="1573442900584" duration="8780000" />
+      <workItem from="1573442900584" duration="34918000" />
     </task>
     <task id="LOCAL-00001" summary="完成80%页面结构重改">
       <created>1571399004406</created>
@@ -139,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573036212533</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增添加用例页面">
+      <created>1573554603410</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573554603410</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,14 +178,15 @@
     <MESSAGE value="完成interface列表" />
     <MESSAGE value="新增用例数据库表（列表+新增表）" />
     <MESSAGE value="新增用例前端页面，列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增用例前端页面，列表" />
+    <MESSAGE value="新增添加用例页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增添加用例页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/apps/project_01/templates/project_01/funcCasesAdd.html</url>
-          <line>178</line>
+          <line>189</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

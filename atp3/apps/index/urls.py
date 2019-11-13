@@ -18,7 +18,5 @@ urlpatterns = [
     path(r'rightContents/', indexView.rightContents),
     path('login/', indexView.login),
     path('logout/', indexView.logout),
-    path('left/', indexView.letf),
-    path('top/', indexView.top),
     path('welcome/', indexView.welcome),
 ]

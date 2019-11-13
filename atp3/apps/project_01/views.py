@@ -23,7 +23,7 @@ def loadFuncCases(request, userid=538530):
 
 def popAddCases(request):
     #新增用例
-    return render(request, 'project_01/funcCasesAdd.html')
+    return render(request, 'project_01/test.html')
 
 
 def AddFuncCases(request, userid=538530):
